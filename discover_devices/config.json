@@ -1,0 +1,21 @@
+{
+  "name": "Device Discovery",
+  "version": "0.1",
+  "slug": "discover_devices",
+  "description": "Discover devices on your network",
+  "url": "https://github.com/chanw28/home-assistant/tree/main/discover_devices",
+  "arch": [
+    "amd64"
+  ],
+  "startup": "before",
+  "boot": "auto",
+  "ports": {
+    "8000/tcp": 8000
+  },
+  "options": {
+    "apikey": "API key specifically for your login. Not in use at the moment"
+  },
+  "schema": {
+    "apikey": "str"
+  }
+}
