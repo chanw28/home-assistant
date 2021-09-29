@@ -1,14 +1,17 @@
 {
     "build_from": {
-      "amd64": "ghcr.io/home-assistant/amd64-base:3.14"
-    },
+        "aarch64": "hassioaddons/base-aarch64:7.1.0",
+        "amd64": "hassioaddons/base-amd64:7.1.0",
+        "armhf": "hassioaddons/base-armhf:7.1.0",
+        "armv7": "hassioaddons/base-armv7:7.1.0",
+        "i386": "hassioaddons/base-i386:7.1.0"
+        },
     "labels": {
         "org.opencontainers.image.title":"Device Discovery Home Assistant Add-on",
         "org.opencontainers.image.description":"This add on uses nmap to scan your network for devices, and identify cybersecurity weaknesses & vulnerabilities.",
-        "org.opencontainers.image.source":"https://github.com/chanw28/home-assistant/discover_devices",
+        "org.opencontainers.image.source":"https://github.com/chanw28/home-assistant/tree/main/discover_devices",
         "org.opencontainers.image.licenses": "Apache License 2.0"
   },
   "args": {
-  "TEMPIO_VERSION": "2021.05.0"
   }
 }
