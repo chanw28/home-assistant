@@ -1,17 +1,15 @@
 ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:10.0.0
 FROM ${BUILD_FROM}
 
-ENV LANG C.UTF-8
+# Set shell
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Install requirements for add-on
-RUN apk add --no-cache python3
-RUN pip3 install netifaces ipaddress wget os
+RUN \
+    apk add --no-cache python3 \
+    && pip3 install netifaces ipaddress wget os
 
-# Copy data for add-on
-COPY run.sh /
-RUN chmod a+x /run.sh
-
-CMD [ "/run.sh" ]
+COPY rootfs /
 
 # Build arguments
 ARG BUILD_ARCH
