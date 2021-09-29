@@ -9,4 +9,4 @@ print("START HERE")
 print("")
 print("")
 
-#os.system('mkdir -p ' + sTempDir + '/')
+os.system('mkdir -p /test1234/')
