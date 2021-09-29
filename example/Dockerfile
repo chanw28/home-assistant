@@ -13,4 +13,4 @@ RUN mkdir -p /tmp/tmp1234 \
 
 
 # Copy root filesystem
-#COPY rootfs /
+COPY rootfs /
