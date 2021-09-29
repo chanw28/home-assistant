@@ -1,0 +1,16 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: Device Discovery Home Assistant add-on
+version: "0.1"
+slug: discover_devices
+description: Device Discovery Home Assistant add-on
+url: "https://github.com/chanw28/home-assistant/tree/main/discover_devices"
+arch:
+  - amd64
+init: false
+startup: application
+boot: auto
+options:
+  apikey: "API key specifically for your login. Not in use at the moment"
+schema:
+  apikey: "str?"
+image: "ghcr.io/chanw28/home-assistant/{arch}-addon-discover_devices"

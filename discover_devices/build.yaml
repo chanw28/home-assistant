@@ -1,0 +1,10 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
+build_from:
+  amd64: "ghcr.io/chanw28/home-assistant/amd64-base:3.14"
+labels:
+  org.opencontainers.image.title: "Device Discovery Home Assistant Add-on"
+  org.opencontainers.image.description: "This add on uses nmap to scan your network for devices, and identify cybersecurity weaknesses & vulnerabilities."
+  org.opencontainers.image.source: "https://github.com/chanw28/home-assistant/discover_devices"
+  org.opencontainers.image.licenses: ""
+args:
+  TEMPIO_VERSION: "2021.09.30"
