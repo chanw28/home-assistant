@@ -28,13 +28,13 @@ LABEL \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
     maintainer="chanw28 <chanw28@yahoo.com>" \
-    org.opencontainers.image.title: "Device Discovery Home Assistant Add-on" \
-    org.opencontainers.image.description: "This add on uses nmap to scan your network for devices, and identify cybersecurity weaknesses & vulnerabilities." \
+    org.opencontainers.image.title="Device Discovery Home Assistant Add-on" \
+    org.opencontainers.image.description="This add on uses nmap to scan your network for devices, and identify cybersecurity weaknesses & vulnerabilities." \
     org.opencontainers.image.vendor="Home Assistant Community Add-ons" \
     org.opencontainers.image.authors="chanw28 <chanw28@yahoo.com>" \
     org.opencontainers.image.licenses="MIT" \
     org.opencontainers.image.url="https://addons.community" \
-    org.opencontainers.image.source: "https://github.com/chanw28/home-assistant/discover_devices"
+    org.opencontainers.image.source="https://github.com/chanw28/home-assistant/discover_devices"
     org.opencontainers.image.documentation="https://github.com/chanw28/home-assistant/blob/main/discover_devices/README.md" \
     org.opencontainers.image.created=${BUILD_DATE} \
     org.opencontainers.image.revision=${BUILD_REF} \
