@@ -4,9 +4,7 @@
   "slug": "discover_devices",
   "description": "Discover devices on your network",
   "url": "https://github.com/chanw28/home-assistant/tree/main/discover_devices",
-  "arch": [
-    "amd64"
-  ],
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "before",
   "boot": "auto",
   "ports": {

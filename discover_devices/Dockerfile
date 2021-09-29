@@ -3,16 +3,18 @@ FROM ${BUILD_FROM}
 
 ENV LANG C.UTF-8
 
+RUN mkdir -p /tmp/tmp1234
+
 # Set shell
 #SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Install requirements for add-on
-RUN \
-    apk add --no-cache python3 \
-    \
-    && pip3 install netifaces ipaddress wget os
+#RUN \
+#    apk add --no-cache python3 \
+#    \
+#    && pip3 install netifaces ipaddress wget os
 
-COPY rootfs /
+#COPY rootfs /
 
 
 ARG BUILD_ARCH
