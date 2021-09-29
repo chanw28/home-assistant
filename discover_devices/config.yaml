@@ -6,6 +6,9 @@ description: Discover devices on your network
 url: "https://github.com/chanw28/home-assistant/tree/main/discover_devices"
 arch:
   - amd64
+#host_network: true
+ports:
+  8000/tcp: 8000
 init: false
 startup: application
 boot: auto
