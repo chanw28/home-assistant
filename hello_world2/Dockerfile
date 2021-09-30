@@ -4,7 +4,7 @@ FROM alpine:latest
 ENV LANG C.UTF-8
 
 RUN apk add --no-cache python3 dcron
-RUN rc-service crond start && rc-update add crond
+#RUN rc-service crond start && rc-update add crond
 
 #RUN chmod 777 /opt/run2.py /opt/hello_world2-cron
 
