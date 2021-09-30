@@ -9,4 +9,4 @@ declare message
 message=$(bashio::config 'message')
 bashio::log.info "${message:="run5 <Hello_World2>"}"
 
-#cat /etc/crontabs/root
+cat /etc/crontabs/root

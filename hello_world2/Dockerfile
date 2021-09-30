@@ -13,11 +13,11 @@ RUN apk add --no-cache python3 dcron
 
 #RUN crontab /etc/cron.d/hello-cron
 
-#RUN echo '*  *  *  *  *    /opt/run2.py' > /etc/crontabs/root
-#RUN echo '' >> /etc/crontabs/root
+COPY rootfs/ /
+RUN echo '*  *  *  *  *    /opt/run2.py' > /etc/crontabs/root
+RUN echo '' >> /etc/crontabs/root
 
 #CMD ['cron', '-l 2', '-f; while true; do sleep 5; echo sleep; done']
 #CMD ['while true; do sleep 5; echo sleep; done']
 
 
-COPY rootfs/ /
