@@ -14,7 +14,7 @@ RUN crontab -l >> /opt/hello_world2-cron \
     \
     && crontab /opt/hello_world2-cron \
     \
-    && crond -l 2
+    && /usr/sbin/crond -l 2
 
 #CMD ['cron', '-l 2', '-f; while true; do sleep 5; echo sleep; done']
 #CMD ['while true; do sleep 5; echo sleep; done']
