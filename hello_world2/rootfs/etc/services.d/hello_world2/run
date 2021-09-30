@@ -14,5 +14,5 @@ bashio::log.info "${message:="run5 <Hello_World2>"}"
 #python3 /opt/run2.py
 #cat /etc/issue
 #cat /opt/run2.py
-crond -l 2
+#crond -l 2
 ps -T
