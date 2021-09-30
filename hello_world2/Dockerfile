@@ -1,5 +1,5 @@
 ARG BUILD_FROM
-FROM alpine
+FROM $BUILD_FROM
 
 ENV LANG C.UTF-8
 
@@ -13,7 +13,7 @@ RUN apk add --no-cache python3 dcron
 
 #RUN crontab /etc/cron.d/hello-cron
 
-COPY rootfs/ /
+COPY rootfs /
 #RUN echo '*  *  *  *  *    /opt/run2.py' > /etc/crontabs/root
 #RUN echo '' >> /etc/crontabs/root
 
