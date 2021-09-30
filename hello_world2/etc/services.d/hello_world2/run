@@ -1,3 +1,3 @@
-#!/usr/bin/with-contenv bashio
-
-echo Hello world2 rootfs!
+#!/usr/bin/python3
+ 
+print("Hello World2b from python run2.py!")
