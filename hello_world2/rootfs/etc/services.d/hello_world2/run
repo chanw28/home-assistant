@@ -13,5 +13,5 @@ bashio::log.info "${message:="run5 <Hello_World2>"}"
 #crontab -l
 #python3 /opt/run2.py
 #cat /etc/issue
-cat /opt/run2.py
-cat /var/log/cron*
+#cat /opt/run2.py
+tail -n 10 /var/log/cron
