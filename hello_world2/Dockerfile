@@ -8,12 +8,12 @@ RUN apk add --no-cache python3 dcron
 
 #RUN chmod 777 /opt/run2.py /opt/hello_world2-cron
 
-#RUN crontab /opt/hello_world2-cron
 
 
 #RUN crontab /etc/cron.d/hello-cron
 
 COPY rootfs /
+RUN crontab /opt/hello_world2-cron
 #RUN echo '*  *  *  *  *    /opt/run2.py' > /etc/crontabs/root
 #RUN echo '' >> /etc/crontabs/root
 
