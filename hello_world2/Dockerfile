@@ -16,4 +16,4 @@ RUN chmod 777 /opt/run2.py /opt/hello_world2-cron
 RUN echo '*  *  *  *  *    /opt/run2.py' > /etc/crontabs/root
 RUN echo '' >> /etc/crontabs/root
 
-CMD ['crond', '-l 2', '-f; while true; do sleep 5; echo sleep; done']
+CMD ['cron', '-l 2', '-f; while true; do sleep 5; echo sleep; done']
