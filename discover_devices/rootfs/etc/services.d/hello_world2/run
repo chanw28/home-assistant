@@ -5,13 +5,13 @@
 # ==============================================================================
 
 
-declare message
-message=$(bashio::config 'message')
-bashio::log.info "${message:="run5 <Hello_World2>"}"
+declare apikey
+apikey=$(bashio::config 'apikey')
+bashio::log.info "APIKey: ${apikey:=""}"
 
 #Execute every 10 seconds
 while true
 do
-    python3 /opt/run2.py
+    python3 discover_device.py
     sleep $(( 2*2 ))
 done

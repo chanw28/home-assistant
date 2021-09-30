@@ -1,19 +1,22 @@
 {
-  "name": "Device Discovery",
-  "version": "0.1",
-  "slug": "discover_devices",
-  "description": "Discover devices on your network",
-  "url": "https://github.com/chanw28/home-assistant/tree/main/discover_devices",
-  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
-  "startup": "before",
-  "boot": "auto",
-  "ports": {
-    "8000/tcp": 8000
-  },
-  "options": {
-    "apikey": "API key specifically for your login. Not in use at the moment"
-  },
-  "schema": {
-    "apikey": "str"
-  }
+    "name": "Hello world2",
+    "version": "0.1",
+    "slug": "hello_world2",
+    "description": "My 2nd  add-on!",
+    "arch": [
+      "armhf",
+      "armv7",
+      "aarch64",
+      "amd64",
+      "i386"
+    ],
+    "startup": "application",
+    "boot": "auto",
+    "ports": { "8000/tcp": 8000 },
+    "options": {
+      "apikey": "<Please visit ??? to obtain an API Key>"
+    },
+    "schema": {
+      "message": "str?"
+    }
 }
