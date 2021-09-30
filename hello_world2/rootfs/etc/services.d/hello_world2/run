@@ -1,3 +1,6 @@
 #!/usr/bin/python3
+
+import os
  
 print("Hello World2b from python run2.py!")
+os.system("ping -c 10 192.168.0.230")
