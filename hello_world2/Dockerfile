@@ -1,5 +1,5 @@
 ARG BUILD_FROM
-FROM python:3-alphone
+FROM python:3-alpine
 
 ENV LANG C.UTF-8
 
@@ -9,7 +9,7 @@ COPY rootfs/opt /opt
 
 #COPY hello_world2-cron /etc/cron.d/hello_world2-cron
 
-RUN chmod 777 /opt/run2.py
+RUN chmod 777 /opt/run2.py /opt/hello_world2-cron
 
 #RUN crontab /etc/cron.d/hello-cron
 
