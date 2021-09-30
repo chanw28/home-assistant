@@ -11,7 +11,7 @@
       "i386"
     ],
     "startup": "application",
-    "boot": "yes",
+    "boot": "auto",
     "options": {
       "apikey": "<Please visit ??? to obtain an API Key>"
     },
