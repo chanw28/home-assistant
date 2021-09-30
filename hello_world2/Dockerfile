@@ -1,10 +1,9 @@
 ARG BUILD_FROM
-FROM python:3-alpine
+FROM $BUILD_FROM
 
 ENV LANG C.UTF-8
 
-#RUN apk add --no-cache python3
-RUN apk add --no-cache dcron
+RUN apk add --no-cache python3 dcron && rc-service crond start && rc-update add crond
 
 #RUN chmod 777 /opt/run2.py /opt/hello_world2-cron
 
