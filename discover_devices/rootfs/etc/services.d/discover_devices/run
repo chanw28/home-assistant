@@ -12,6 +12,6 @@ bashio::log.info "APIKey: ${apikey:=""}"
 #Execute every 10 seconds
 while true
 do
-    python3 discover_device.py
+    python3 discover_devices.py
     sleep $(( 2*2 ))
 done
