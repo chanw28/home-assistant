@@ -1,8 +1,8 @@
 {
-    "name": "Hello world2",
+    "name": "discover_device",
     "version": "0.1",
     "slug": "hello_world2",
-    "description": "My 2nd  add-on!",
+    "description": "Device discovery for Home Assistant Add On",
     "arch": [
       "armhf",
       "armv7",
@@ -11,12 +11,11 @@
       "i386"
     ],
     "startup": "application",
-    "boot": "auto",
-    "ports": { "8000/tcp": 8000 },
+    "boot": "yes",
     "options": {
       "apikey": "<Please visit ??? to obtain an API Key>"
     },
     "schema": {
-      "message": "str?"
+      "apikey": "str?"
     }
 }
