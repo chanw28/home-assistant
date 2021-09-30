@@ -1,0 +1,17 @@
+{
+    "name": "Hello world2",
+    "version": "1",
+    "slug": "hello_world2",
+    "description": "My 2nd  add-on!",
+    "arch": [
+      "armhf",
+      "armv7",
+      "aarch64",
+      "amd64",
+      "i386"
+    ],
+    "startup": "application",
+    "boot": "auto",
+    "options": {},
+    "schema": {}
+  }
