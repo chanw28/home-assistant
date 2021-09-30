@@ -1,5 +1,5 @@
 ARG BUILD_FROM
-FROM alpine:latest
+FROM alpine
 
 ENV LANG C.UTF-8
 
