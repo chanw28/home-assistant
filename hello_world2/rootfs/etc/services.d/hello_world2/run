@@ -1,6 +1,5 @@
-#!/usr/bin/python3
+#!/usr/bin/with-contenv bashio
 
-import os
- 
-print("Hello World2b from python run2.py!")
-os.system("ping -c 10 192.168.0.230")
+echo Hello world2c... pinging!
+ping -c 10 192.168.0.230
+echo PING completed!

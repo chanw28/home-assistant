@@ -15,6 +15,3 @@ message=$(bashio::config 'message')
 ## Print the message the user supplied, defaults to "Hello World..."
 bashio::log.info "${message:="Hello World..."}"
 
-## Run your program
-exec chmod +x /opt/discover_devices.py
-exec python3 /opt/discover_devices.py
