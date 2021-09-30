@@ -15,4 +15,11 @@ bashio::log.info "${message:="run5 <Hello_World2>"}"
 #cat /etc/issue
 #cat /opt/run2.py
 #crond -l 2
-ps -T
+#ps -T
+
+while true
+do
+    sleep 5
+    echo 'executing...'
+    python3 /opt/run2.py
+done
