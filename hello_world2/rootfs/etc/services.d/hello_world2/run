@@ -2,6 +2,8 @@
 
 echo Hello world2c... pinging!
 ping -c 1 192.168.0.230
-echo PING completed!
 
 python3 -m http.server 8000
+
+ping -c 1 192.168.0.230
+echo completed!
