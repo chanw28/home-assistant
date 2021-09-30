@@ -18,13 +18,15 @@
       "wine": true,
       "liquor": false,
       "name": "world",
-      "year": 2017
+      "year": 2017,
+      "message": "Hello world2..."
     },
     "schema": {
       "beer": "bool",
       "wine": "bool",
       "liquor": "bool",
       "name": "str",
-      "year": "int"
+      "year": "int",
+      "message": "str?"
     }
 }
