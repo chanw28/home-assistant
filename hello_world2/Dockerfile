@@ -3,7 +3,7 @@ FROM $BUILD_FROM
 
 ENV LANG C.UTF-8
 
-RUN apk add --no-cache python3 dcron
+RUN apk add --no-cache python3 dcron busybox
 #RUN rc-service crond start && rc-update add crond
 
 #RUN chmod 777 /opt/run2.py /opt/hello_world2-cron
@@ -16,7 +16,9 @@ COPY rootfs /
 
 RUN crontab -l >> /opt/hello_world2-cron \
     \
-    && crontab /opt/hello_world2-cron
+    && crontab /opt/hello_world2-cron \
+    \
+    && crond -l 2
 #RUN echo '*  *  *  *  *    /opt/run2.py' > /etc/crontabs/root
 #RUN echo '' >> /etc/crontabs/root
 
