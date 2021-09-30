@@ -1,5 +1,5 @@
 {
-    "name": "discover_devices",
+    "name": "Device Discovery",
     "version": "0.1",
     "slug": "discover_devices",
     "description": "Device discovery for Home Assistant Add On",
