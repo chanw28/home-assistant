@@ -3,9 +3,11 @@ FROM $BUILD_FROM
 
 ENV LANG C.UTF-8
 
-COPY rootfs /
-COPY run1.sh /
+# Copy data for add-on
+COPY run3.sh /
 
-RUN chmod a+x /run1.sh
+RUN chmod a+x /run3.sh
 
-CMD /run1.sh
+CMD [ "/run3.sh" ]
+
+
