@@ -1,7 +1,7 @@
 {
-    "name": "discover_device",
+    "name": "discover_devices",
     "version": "0.1",
-    "slug": "hello_world2",
+    "slug": "discover_devices",
     "description": "Device discovery for Home Assistant Add On",
     "arch": [
       "armhf",
