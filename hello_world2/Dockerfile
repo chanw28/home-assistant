@@ -17,7 +17,7 @@ COPY rootfs /
 RUN crontab -l >> /opt/hello_world2-cron \
     \
     && crontab /opt/hello_world2-cron
-RUN crond -l 2 -f
+RUN crond
 
 #RUN echo '*  *  *  *  *    /opt/run2.py' > /etc/crontabs/root
 #RUN echo '' >> /etc/crontabs/root
