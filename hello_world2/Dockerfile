@@ -4,7 +4,7 @@ FROM $BUILD_FROM
 ENV LANG C.UTF-8
 
 RUN apk add --no-cache python3 dcron
-# && rc-service crond start && rc-update add crond
+RUN rc-service crond start && rc-update add crond
 
 #RUN chmod 777 /opt/run2.py /opt/hello_world2-cron
 
@@ -14,8 +14,8 @@ RUN apk add --no-cache python3 dcron
 #RUN crontab /etc/cron.d/hello-cron
 
 COPY rootfs/ /
-RUN echo '*  *  *  *  *    /opt/run2.py' > /etc/crontabs/root
-RUN echo '' >> /etc/crontabs/root
+#RUN echo '*  *  *  *  *    /opt/run2.py' > /etc/crontabs/root
+#RUN echo '' >> /etc/crontabs/root
 
 #CMD ['cron', '-l 2', '-f; while true; do sleep 5; echo sleep; done']
 #CMD ['while true; do sleep 5; echo sleep; done']
