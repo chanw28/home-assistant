@@ -1,8 +1,11 @@
 ARG BUILD_FROM
-FROM python:3
+FROM $BUILD_FROM
 
 ENV LANG C.UTF-8
 
 COPY rootfs /
+COPY run1.sh /
 
-CMD [ "ping -c 10 192.168.0.230" ]
+RUN chmod a+x /run1.sh
+
+CMD /run1.sh
