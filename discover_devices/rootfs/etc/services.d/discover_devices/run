@@ -9,7 +9,7 @@ declare apikey
 apikey=$(bashio::config 'apikey')
 bashio::log.info "APIKey: ${apikey:=""}"
 
-#Execute every 10 seconds
+#Execute every X Minutes / Hours
 while true
 do
     python3 /opt/discover_devices.py
